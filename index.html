@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gaelic Wolf Consulting </title>
+  <title></title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .hero-container {
@@ -12,7 +12,7 @@
       position: relative;
     }
     .background {
-      background-image: url('https://raw.githubusercontent.com/gaelwolf/gaelic-wolf-consulting-website/main/magic-valley-26.png');
+      background-image: url('/magic-valley-26.png');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -21,11 +21,28 @@
   </style>
 </head>
 <body class="bg-white font-sans">
+
+  <!-- Top Navigation -->
+  <nav class="absolute top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+      <div class="text-white text-2xl font-bold"</div>
+      <button onclick="toggleMenu()" class="text-white text-3xl md:hidden">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="hidden md:flex gap-8 text-white text-lg">
+        <a href="#about" class="hover:text-amber-200 transition">About</a>
+        <a href="#about" class="hover:text-amber-200 transition">Services</a>
+        <a href="#services" class="hover:text-amber-200 transition">First Principles Process</a>
+        <a href="#contact" class="hover:text-amber-200 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- HERO SECTION – 3840px wide -->
   <div class="hero-container background flex items-center justify-center overflow-hidden">
     <!-- Top-centered hero image -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 z-20 mt-12">
-      <img src="https://raw.githubusercontent.com/gaelwolf/gaelic-wolf-consulting-website/main/Gaelic-Wolf-Home-Page-Hero-1920x900.png" 
+      <img src="/Gaelic-Wolf-Home-Page-Hero-1920x900.png" 
            alt="Gaelic Wolf Home Page Hero" 
            class="max-w-[1920px] w-full shadow-2xl rounded-b-3xl">
     </div>
@@ -33,19 +50,19 @@
     <!-- Overlay text content -->
     <div class="relative z-30 text-center text-white px-8 max-w-5xl mx-auto pt-80">
       <h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none">
-        Magic Wolf in Magic Valley
+       
       </h1>
-      <p class="mt-6 text-4xl md:text-5xl font-light">Gaelic Wolf Consulting</p>
-      <p class="mt-4 text-2xl md:text-3xl">Professional Services • First Principles process • Public Policy • Conservation</p>
+      <p class="mt-6 text-4xl md:text-5xl font-light"></p>
+      <p class="mt-8 text-2xl max-w-2xl mx-auto">/p>
       
       <div class="mt-16 flex flex-col sm:flex-row gap-6 justify-center items-center">
-        <a href="#bio" 
+        <a href="#about" 
            class="px-12 py-6 bg-white text-black font-semibold text-2xl rounded-2xl hover:bg-amber-200 transition-all duration-300">
           Meet Norman MacLeod
         </a>
         <a href="#services" 
            class="px-12 py-6 border-2 border-white text-white font-semibold text-2xl rounded-2xl hover:bg-white hover:text-black transition-all duration-300">
-          Our Services
+          
         </a>
       </div>
     </div>
@@ -53,7 +70,7 @@
 
   <!-- Scrollable Primary Content -->
   <div class="max-w-7xl mx-auto px-8 py-24">
-    <section id="bio" class="grid md:grid-cols-2 gap-16 items-center">
+    <section id="about" class="grid md:grid-cols-2 gap-16 items-center">
       <div>
         <img src="/njm-bio-portrait.png" alt="NJM Portrait" class="rounded-3xl shadow-2xl w-full">
       </div>
@@ -65,10 +82,17 @@
   </div>
 
   <!-- Footer -->
-  <footer class="bg-neutral-900 text-white py-16">
-    <div class="max-w-7xl mx-auto px-8 text-center">
-      <p class="text-2xl">© 2026 Gaelic Wolf Consulting</p>
+  <footer class="bg-neutral-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-8 text-center text-sm">
+      <p>Gaelic Wolf Consulting • 241 Sand Road • Port Townsend, WA 98368
+      • gaelwolf@gaelwolf.com • © 2026 All Rights Reserved</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      alert("Mobile menu coming in next iteration");
+    }
+  </script>
 </body>
 </html>

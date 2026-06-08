@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaelic Wolf Consulting - Magic Wolf in Magic Valley</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap');
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaelic Wolf Consulting • Magic Wolf in Magic Valley</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    .hero-container {
+      max-width: 3840px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .background {
+      background-image: url('/public/images/magic-valley-26.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
 </head>
 <body class="bg-white font-sans">
-    <!-- Hero -->
-    <div class="relative h-screen flex items-center justify-center overflow-hidden">
-        <img src="https://via.placeholder.com/1920x1080/0f766e/ffffff?text=Magic+Valley+with+Magic+Wolf" alt="Magic Wolf in Magic Valley" class="absolute inset-0 w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/70"></div>
-        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
-            <h1 class="text-7xl md:text-8xl font-bold text-white tracking-tighter mb-4">Magic Wolf</h1>
-            <p class="text-4xl md:text-5xl text-white/90 mb-8">in Magic Valley</p>
-            <p class="text-xl md:text-2xl text-white/80 max-w-md mx-auto">Gaelic Wolf Consulting</p>
-            <p class="mt-12 text-white">Professional Natural Resource Policy Services</p>
-            <a href="#bio" class="mt-16 inline-block px-10 py-5 bg-white text-teal-900 font-semibold rounded-2xl hover:bg-amber-200 transition-colors">Meet NJM</a>
-        </div>
+  <!-- HERO SECTION – 3840px wide -->
+  <div class="hero-container background min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Top-centered hero image -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 z-20 mt-12">
+      <img src="/public/images/Gaelic-Wolf-Home-Page-Hero-1920x900.png" 
+           alt="Gaelic Wolf Home Page Hero" 
+           class="max-w-[1920px] w-full shadow-2xl rounded-b-3xl">
     </div>
-    <!-- Bio Section Placeholder -->
-    <section id="bio" class="py-24 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-5xl font-semibold text-center mb-12">NJM Bio</h2>
-            <p class="text-center text-xl">Upload your bio portrait to /images/njm-bio-portrait.webp and replace placeholder.</p>
-        </div>
+
+    <!-- Overlay text content -->
+    <div class="relative z-30 text-center text-white px-8 max-w-5xl mx-auto pt-80">
+      <h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none">
+        Magic Wolf in Magic Valley
+      </h1>
+      <p class="mt-6 text-4xl md:text-5xl font-light">Gaelic Wolf Consulting</p>
+      <p class="mt-4 text-2xl md:text-3xl">Professional Services • Conservation • Stewardship</p>
+      
+      <div class="mt-16 flex flex-col sm:flex-row gap-6 justify-center items-center">
+        <a href="#bio" 
+           class="px-12 py-6 bg-white text-black font-semibold text-2xl rounded-2xl hover:bg-amber-200 transition-all duration-300">
+          Meet NJM
+        </a>
+        <a href="#services" 
+           class="px-12 py-6 border-2 border-white text-white font-semibold text-2xl rounded-2xl hover:bg-white hover:text-black transition-all duration-300">
+          Our Services
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scrollable Primary Content Starts Here -->
+  <div class="max-w-7xl mx-auto px-8 py-24">
+    <!-- NJM Bio Teaser -->
+    <section id="bio" class="grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <img src="/public/images/njm-bio-portrait.png" alt="NJM Portrait" class="rounded-3xl shadow-2xl w-full">
+      </div>
+      <div>
+        <h2 class="text-5xl font-bold">Norman J. MacLeod</h2>
+        <p class="mt-8 text-2xl leading-relaxed">Polymath conservationist and founder of Gaelic Wolf Consulting. Bringing decades of field experience and “Magic Wolf” insight to modern voluntary conservation programs.</p>
+        <a href="#" class="inline-block mt-10 px-10 py-4 bg-neutral-900 text-white rounded-2xl text-xl font-medium">Read Full Bio →</a>
+      </div>
     </section>
-    <footer class="bg-teal-900 text-white py-12 text-center">
-        <p>&copy; Gaelic Wolf Consulting. All rights reserved.</p>
-    </footer>
-    <script>
-        document.documentElement.setAttribute('data-theme', 'light');
-    </script>
+
+    <!-- Additional sections can be expanded here as needed -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-8 text-center">
+      <p class="text-2xl">© 2026 Gaelic Wolf Consulting • Magic Wolf in Magic Valley</p>
+    </div>
+  </footer>
 </body>
 </html>

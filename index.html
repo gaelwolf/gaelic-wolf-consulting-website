@@ -7,7 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
-        .hero-bg { background-image: url('images/bg_magic_wolf_2200.png'); background-size: cover; background-position: center; }
+        .hero-bg {
+            background-image: url('images/Gaelic Wolf-Home Page Hero-1920x900.png');
+            background-size: cover;
+            background-position: center;
+        }
         .nav-link { transition: all 0.3s ease; }
     </style>
 </head>
@@ -16,7 +20,7 @@
     <nav class="bg-white border-b shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-x-3">
-                <img src="images/magic-Wolf-2026-version.jpg" alt="Magic Wolf" class="h-10 w-10 rounded-full object-cover">
+                <img src="images/magic-Wolf-2026-version.png" alt="Magic Wolf" class="h-10 w-10 rounded-full object-cover">
                 <span class="text-2xl font-bold tracking-tight">Gaelic Wolf</span>
             </div>
             <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
@@ -28,7 +32,6 @@
             </div>
             <button onclick="toggleMobileMenu()" class="md:hidden text-2xl">☰</button>
         </div>
-        <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden bg-white border-t px-6 py-4 flex flex-col gap-y-4 text-sm font-medium">
             <a href="#" class="nav-link">Home</a>
             <a href="#" class="nav-link">About</a>
@@ -43,7 +46,7 @@
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
             <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-4">Magic Wolf in Magic Valley</h1>
-            <p class="text-2xl md:text-3xl mb-8">Natural Resource Policy & Photography • Norman J. MacLeod</p>
+            <p class="text-2xl md:text-3xl mb-8">Olympic National Park, Washington • Natural Resource Policy & Photography</p>
             <a href="#" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})" 
                class="inline-block bg-white text-emerald-800 px-10 py-4 rounded-2xl font-semibold text-lg hover:bg-emerald-100 transition-colors">
                 Explore the Vision
@@ -56,25 +59,18 @@
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 class="text-4xl font-bold mb-6">Norman J. MacLeod</h2>
-                <p class="text-lg leading-relaxed text-gray-700">Founder, Gaelic Wolf Consulting. Polymath conservationist, photographer, and policy expert with decades of experience in natural resource management, wolf recovery, and high-alpine ecosystems.</p>
-                <div class="mt-8 flex flex-wrap gap-4">
-                    <span class="px-5 py-2 bg-emerald-100 text-emerald-800 rounded-3xl text-sm font-medium">US Ski Team Alum</span>
-                    <span class="px-5 py-2 bg-emerald-100 text-emerald-800 rounded-3xl text-sm font-medium">Magic Valley Photography</span>
-                    <span class="px-5 py-2 bg-emerald-100 text-emerald-800 rounded-3xl text-sm font-medium">Wolf Conservation Advocate</span>
-                </div>
+                <p class="text-lg leading-relaxed text-gray-700">Founder, Gaelic Wolf Consulting. Polymath conservationist, photographer, and policy expert with decades of experience in natural resource management, wolf recovery, and high-alpine ecosystems of the Olympic Mountains.</p>
             </div>
             <div>
-                <img src="images/NJM-Bio-Pic.jpg" alt="Norman J. MacLeod Bio Portrait" 
-                     class="rounded-3xl shadow-2xl w-full max-w-md mx-auto object-cover">
+                <img src="images/NJM-bio-pic.png" alt="Norman J. MacLeod Bio Portrait" class="rounded-3xl shadow-2xl w-full max-w-md mx-auto object-cover">
             </div>
         </div>
     </section>
 
-    <!-- Services, Projects, Contact sections follow the same high-contrast, responsive pattern (full code available on request for expansion) -->
-
+    <!-- Footer -->
     <footer class="bg-emerald-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <p class="text-sm opacity-75">© 2026 Gaelic Wolf Consulting • Magic Valley, Idaho</p>
+            <p class="text-sm opacity-75">© 2026 Gaelic Wolf Consulting • Magic Valley, Olympic National Park, Washington</p>
         </div>
     </footer>
 
@@ -83,7 +79,6 @@
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('hidden');
         }
-        // Tailwind script already loaded via CDN
     </script>
 </body>
 </html>
